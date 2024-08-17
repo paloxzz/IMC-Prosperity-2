@@ -61,3 +61,59 @@ Market Making and Market Taking Explained
 Market Making: This involves placing both buy (bid) and sell (ask) orders at various price levels within the order book to provide liquidity. These orders are designed to create a trading environment rather than for immediate execution.
 
 Market Taking: This strategy focuses on executing trades by matching orders with existing ones in the order book, primarily aiming to fill positions, regardless of price levels.
+
+# Round-4
+
+# Spread Trading with Gift Baskets
+
+- New Assets Introduced:
+  - Gift baskets, chocolates, roses, strawberries.
+  - Gift basket composition: 4 chocolates, 6 strawberries, 1 rose.
+  
+- Strategy:
+  - Focused on trading spreads: `Spread = Basket Price - Synthetic Price`.
+  - Hypotheses:
+    1. Leading/Lagging Relationships: Explored whether synthetic prices or basket prices led the other.
+    2. Mean Reversion: Investigated if the spread between basket and synthetic prices was mean-reverting.
+
+- Observations:
+  - Spread price consistently oscillated around ~368 across historical data.
+  - Adopted a mean-reversion strategy:
+    - Buy spreads: When the spread price was below average.
+    - Sell spreads: When the spread price was above average.
+
+- Challenges:
+  - Position limits restricted the number of trades.
+  
+
+So, we shifted to Vega Trading with COCONUT_COUPON Options
+
+- Underlying Assets:
+  - COCONUT: Asset.
+  - COCONUT_COUPON: European call option, strike price of 10000, time to maturity 250 days.
+
+- Strategy:
+  - Focused on vega trading, exploiting changes in implied volatility (IV).
+  - Calculated IV using Black-Scholes:
+    - Observed IV oscillated around ~16%.
+    - Identified strong intraday mean-reverting behavior.
+
+- Trading Approach:
+  - Initial Strategy: Pyramid-style grid trading:
+    - Increased position size as IV deviated from its average.
+    - Found that weaker mean-reversion signals at lower z-scores were ineffective.
+  - Modified Strategy: Trapezoid-style grid trading:
+    - Avoided trading below a certain z-score threshold.
+    - Discovered that going all-in near a z-score of 1.5 was the most profitable.
+
+- Challenges:
+  - Delta-hedging resulted in losses.
+  - Explored alternative hedging decisions:
+    - Naked trading.
+    - Flipping the hedge based on IV levels.
+  - Conclusion: Flipped the hedge, using underlying asset signals based on IV to trade.
+
+  
+# Round-5
+
+University exams were on the head, so couldn't do anything in context of the competition.
