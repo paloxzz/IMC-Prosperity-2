@@ -3,15 +3,8 @@
 
 
 ## Results
-### Final Rank: 219th overall (top 2%), 13th in India.
+### Final Rank: 219th overall, 13th in India.
 
-| Rank    | Overall | Manual | Algorithmic | Country |
-| ------- | ------- | ------ | ----------- | ------- |
-| Round 1 | 729     | ------ | 571         | ------- |
-| Round 2 | 243     | ------ | ------      | ------- |
-| Round 3 | 260     | ------ | ------      | ------- |
-| Round 4 | 215     | ------ | 201         | 12      |
-| Round 5 | 219     | 352    | 229         | 13      |
 
 ---
 # Team 8848
