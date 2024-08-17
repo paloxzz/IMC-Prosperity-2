@@ -62,7 +62,7 @@ Market Making: This involves placing both buy (bid) and sell (ask) orders at var
 
 Market Taking: This strategy focuses on executing trades by matching orders with existing ones in the order book, primarily aiming to fill positions, regardless of price levels.
 
-# Round-4
+# Round-3
 
 # Spread Trading with Gift Baskets
 
@@ -84,9 +84,22 @@ Market Taking: This strategy focuses on executing trades by matching orders with
 
 - Challenges:
   - Position limits restricted the number of trades.
-  
+  - Timing trades was critical to avoid missing reversion opportunities.
 
-So, we shifted to Vega Trading with COCONUT_COUPON Options
+
+- Better, adaptive Strategy:
+  - Implemented a modified z-score based trading approach: calculated z_score_diff and evaluated if GIFT_BASKET is overvalued(z_score_diff>2) or undervalued(z_score_diff< -2).
+  - The small rolling window captured volatility spikes, helping to trade closer to local minima/maxima.
+
+Still, the implementation was not up to the mark and the strategy fails when spikes in assets correspond to dips during downtrends.
+
+
+  
+# Round-4
+
+# Vega Trading with COCONUT_COUPON Options
+
+Vega is the measurement of an option's price sensitivity to changes in the volatility of the underlying asset.
 
 - Underlying Assets:
   - COCONUT: Asset.
@@ -108,6 +121,8 @@ So, we shifted to Vega Trading with COCONUT_COUPON Options
 
 - Challenges:
   - Delta-hedging resulted in losses.
+
+- Further trials:
   - Explored alternative hedging decisions:
     - Naked trading.
     - Flipping the hedge based on IV levels.
