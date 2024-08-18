@@ -149,8 +149,6 @@ In Round 3, we were introduced to a new product: the `GIFT_BASKET`, which contai
 
 **Objective:**  
 In this challenge, we were tasked with embarking on up to three treasure-hunting expeditions, each with a potential reward based on the **treasure multiplier** and the number of **hunters** in the same spot. The challenge was to maximize our profit while balancing the cost of additional expeditions and the competition from other players.
-
-**Our Approach:**  
   
 ## Round 4:
 
@@ -200,8 +198,6 @@ Round 4 introduced a new product: the `COCONUT_COUPON`. These coupons granted th
 **Objective:**  
 In this challenge, we were again bidding on `SCUBA_GEAR`, but with a twist. This time, the second bid also considered the average second bid of all other traders in the archipelago. If our second bid was under the average, our probability of securing a deal decreased based on a scaling factor, adding a dynamic element to our bidding strategy.
 
-**Our Approach:**  
-  
 ## Round 5:
 
 ### Algorithm Challenge
