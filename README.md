@@ -212,22 +212,19 @@ However we were not able to implement the updates due to our university term exa
 ### Manual Challenge
 
 **Objective:**  
-In this exclusive final challenge, we were invited to trade foreign goods on the northern archipelago. The penguins’ trusted news source, Iceberg, provided us with critical market information, but we also had to manage the increasing costs of trading each good as we conducted more trades.
+In the final challenge, we were invited to trade foreign goods on the Northern Archipelago. The penguins’ trusted news source, Iceberg, provided us with critical market information, but we also had to manage the increasing costs of trading each good as we conducted more trades.
 
 **Our Approach:**  
-- **Cost Management:** We closely monitored the costs associated with trading foreign goods and optimized our trade frequency. By balancing the cost of additional trades with potential profits, we ensured that our final day of trading was efficient and profitable.
-- **News Analysis:** Using insights from the Iceberg news source, we identified key trends and market movements in the northern archipelago. This allowed us to make informed decisions about which foreign goods to trade, timing our entries and exits for maximum impact.
-- **Profitability Check:** We employed Monte Carlo simulations to assess the profitability of each trade. By simulating various expected price movements and market sentiments, we validated the potential outcomes and risks, optimizing our strategy for better returns.
+- **News Analysis:** Using insights from the Iceberg news source, we identified key trends and market movements in the Northern Archipelago. This allowed us to make informed decisions about which foreign goods to trade, timing our entries and exits for maximum impact.
+- **Profitability Check:** We employed Monte Carlo simulations to assess the profitability of each trade. 
 - **Selective Trading:** Rather than engaging in broad trading across all goods, we focused on a few high-margin opportunities, ensuring that the rising costs did not erode our profits.
 
-**Outcome and Performance:**  
-Despite the increasing costs of trading, our focused and data-driven approach enabled us to finish the challenge on a high note. We successfully navigated the foreign goods market, maximizing our returns with well-timed and strategic trades.
 
 ## Results
 ### Final Rank: 219th overall, 13th in India.
 
 ## Final Thoughts
 
-Participating in Prosperity2 was an invaluable experience that not only tested our trading knowledge but also honed our teamwork and problem-solving skills. Each challenge pushed us to think critically and adapt quickly, providing insights that will be beneficial in our future trading endeavors.
+Participating in Prosperity-2 was an invaluable experience that tested our trading knowledge and problem-solving skills in a fast-paced setting. Each challenge pushed us to think critically and adapt quickly, which will hopefully be beneficial in our future endeavors.
 
-We hope this repository serves as a useful resource for anyone looking to understand how we tackled the challenges and to inspire others in similar competitions.
+We hope this repository serves as a useful resource for anyone looking to understand how we tackled the challenges! Peace!
