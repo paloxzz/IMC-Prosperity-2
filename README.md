@@ -19,7 +19,7 @@ The Prosperity-2 challenge was intense yet rewarding(in context of knowledge, XD
 ### Algorithm Challenge
 
 **Objective:**  
-In this round, we were introduced to the first two tradable products: `STARFRUIT` and `AMETHYSTS`. While the value of `AMETHYSTS` has historically remained stable, the value of `STARFRUIT` fluctuates over time. Our task was to develop an initial trading strategy and write a Python program to effectively trade and market make these products, despite their differing price behaviors.
+In this round, we were introduced to the first two tradable products: `STARFRUIT` and `AMETHYSTS`. While the value of `AMETHYSTS` has historically remained stable, the value of `STARFRUIT` fluctuates over time.
 
 **Position Limits:**
 - `STARFRUIT`: 20
@@ -32,7 +32,8 @@ In this round, we were introduced to the first two tradable products: `STARFRUIT
    - We regularly updated the fair value of the products based on current market conditions, ensuring that we were trading at or near the most accurate price levels.
 
 2. **Executing Scratches**
-   - We performed market-taking actions when orders were under or near FV, avoiding transactions at the worst bid/ask levels to minimize risk.
+   - Perform market-taking actions under or near fair value orders, avoiding transactions at the worst bid/ask levels.
+
 
 3. **Stop Loss Implementation**
    - Trading was halted when inventory levels exceeded a predefined limit. This ensured that stop loss actions were not triggered at unfavorable bid/ask levels, protecting against large losses.
@@ -78,8 +79,7 @@ We evaluated various rolling window sizes using heatmaps to find the optimal win
 In this challenge, we were given two opportunities to bid on `SCUBA_GEAR`, which we could later sell for 1000 SeaShells each. The goldfish we were trading with would accept the lowest bid that exceeded their reserve price, which varied between 900 and 1000 SeaShells, with higher prices being more likely.
 
 **Our Approach:**  
-- **Bidding Strategy:** Knowing that the reserve price distribution was skewed towards 1000, we decided to place our bids close to the higher end of the range. Our first bid was set just above the median of the distribution, and our second bid was placed significantly higher to maximize the chance of acceptance.
-- **Risk Management:** We balanced the need to make competitive bids with the desire to maximize our profit margin by carefully calculating the probability of each bid being accepted.
+- Although it was a fairly easy round, we messed up very bad by not going with mathematical results and bringing in- intution, more than we should have. As a result, we got >1000 rank in the manual challenge by the end of Round-1.
 
 ## Round 2:
 ### Algorithm Challenge
@@ -102,18 +102,13 @@ The manual challenge this round involved a series of foreign currency trades. We
 **Objective:**  
 In Round 3, we were introduced to a new product: the `GIFT_BASKET`, which contains four `CHOCOLATE` bars, six `STRAWBERRIES`, and a single `ROSES`. These items, along with the products from the previous rounds (`STARFRUIT`, `AMETHYSTS`, `ORCHIDS`), could all be traded on the island exchange. Our task was to determine whether it was more profitable to trade the `GIFT_BASKET` as a whole or to sell its individual contents separately.
 
-**Position Limits:**
-- `CHOCOLATE`: 250
-- `STRAWBERRIES`: 350
-- `ROSES`: 60
-- `GIFT_BASKET`: 60
 
 **Our Approach:**  
 - **Spread Trading**: Focused on trading the spread between the Gift Basket and its underlying components.
   - **Spread Formula**: `Spread = Basket Price - Synthetic Price (sum of components)`
   - **Key Hypotheses**:
     1. **Leading/Lagging Relationships**: Explored whether the synthetic prices or basket prices led the other in market movement.
-    2. **Mean Reversion**: Investigated if the spread between basket and synthetic prices exhibited mean-reverting behavior.
+    2. **Mean Reversion**: Checked if the spread between basket and synthetic prices exhibited mean-reverting behavior.
 
 #### Observations:
 - Historical data showed that the spread price oscillated around ~368.
@@ -192,11 +187,11 @@ In this challenge, we were again bidding on `SCUBA_GEAR`, but with a twist. This
 ### Algorithm Challenge
 
 **Objective:**  
-In the final round, no new products were introduced, but we gained access to valuable information: the `counter_party` in each trade. This allowed us to see who we were trading against, presenting an opportunity to further refine our algorithm and potentially increase profitability by leveraging counterparty behavior.
+In the final round, no new products were introduced, but we gained access to valuable information: the `counter_party` aka bots' trading behaviour in each trade. So, basically it was a strategy optimization round.
 
 **Approach:**
 Through the data colleced from the counter parties, various conditions can be made for different assets as each counter party had a unique behavior with a certain asset like buying high/low and selling low/high for coconuts, etc., which could easily be identified by plotting the data for visual representation.
-However we were not able to implement the updates due to our university term examinations and thus missed the algo trading round
+However we were not able to implement the updates due to our university term examinations and thus missed the algo trading round.
 
 ### Manual Challenge
 
