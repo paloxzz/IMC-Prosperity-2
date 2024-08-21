@@ -1,8 +1,5 @@
 # IMC-Prosperity-2 Trading Challenge
-Welcome to our GitHub repository for the strategies and approaches we used during the Prosperity2 trading challenge, a flagship event organized by IMC Trading. This 15-day trading challenge tested our skills, creativity, and teamwork, and provided an incredible learning experience.
-
-## About Prosperity2
-Prosperity2 is a premier trading competition designed for students passionate about trading and finance. Over 15 days, participants are tasked with solving various trading challenges, each simulating real-world market scenarios. The event is a blend of strategic thinking, quantitative analysis, and quick decision-making, pushing teams to develop and implement effective trading strategies under pressure.
+Welcome to our GitHub repository for the strategies and approaches we used during the Prosperity2 trading challenge, a flagship 15-day event organized by IMC Trading. 
 
 ---
 ## Team 8848
@@ -16,7 +13,7 @@ Undergraduate students from IIT BHU(Varanasi).
 ---
 
 ## Our Experience
-The Prosperity2 challenge was intense yet rewarding. Each challenge brought a new set of hurdles that required us to adapt and innovate. Below, we've outlined our experiences with each challenge, detailing how we approached them, the strategies we used, and the lessons we learned along the way.
+The Prosperity-2 challenge was intense yet rewarding(in context of knowledge, XD!). Below, we've outlined our experiences with each challenge, their approach, and a few lessons here and there.
 
 ## Round 1
 ### Algorithm Challenge
