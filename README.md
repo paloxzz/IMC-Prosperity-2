@@ -76,10 +76,14 @@ We evaluated various rolling window sizes using heatmaps to find the optimal win
 ### Manual Challenge
 
 **Objective:**  
-In this challenge, we were given two opportunities to bid on `SCUBA_GEAR`, which we could later sell for 1000 SeaShells each. The goldfish we were trading with would accept the lowest bid that exceeded their reserve price, which varied between 900 and 1000 SeaShells, with higher prices being more likely.
+A huge school of goldfish arrived at our shores. And they all brought scuba gear they want to get rid of fast. For the right price of course.
+
+You only have two chances to offer a good price. Each one of the goldfish will accept the lowest bid that is over their reserve price. There's a constant desire for scuba gear on the archipelago. So, at the end of the round, you'll be able to sell them for 1000 SeaShells a piece. Your goal is to set prices that ensure a profitable trade with as many goldfish as possible.
 
 **Our Approach:**  
 - Although it was a fairly easy round, we messed up very bad by not going with mathematical results and bringing in- intution, more than we should have. As a result, we got >1000 rank in the manual challenge by the end of Round-1.
+**Hint for Optimal Soln:**  
+- We first buy everything below our lowest bid(a), and afterwards be buy everything below our highest bid(b). Just Monte Carlo the results. We can draw samples from a given distribution with numpy.random.triangular function, where we set the left (lower limit) to 900, and both mode and right (higher limit) to 1000.
 
 ## Round 2:
 ### Algorithm Challenge
@@ -94,7 +98,11 @@ In this round, we continued trading the products introduced in Round 1 (`STARFRU
 ### Manual Challenge
 
 **Objective:**  
-The manual challenge this round involved a series of foreign currency trades. We started by converting our SeaShells into a foreign currency and ended with a final conversion back into SeaShells. The challenge was to determine the optimal series of trades in between that would maximize our final holdings of SeaShells.
+Today is a special day. Representatives from three other archipelagos are visiting to trade their currencies with us. You can trade Wasabi roots with Sing the Songbird, Pizza slices with Devin the Duck, and Snowballs with Pam the Penguin.
+
+Your objective is to trade these currencies and maximize your profit in SeaShells. The number of trades is limited to 5.
+
+**Our Approach:**  We calculated the profit of each possible answer(can be solved by doing simple brute-force or using dynamic programming or graph techniques), and ended up submitting seashells -> pizza slices -> wasabi roots -> seashells -> pizza slices -> seashells, which gave the maximum profit of ~113,938.
 
 
 ## Round 3:
@@ -132,7 +140,9 @@ In Round 3, we were introduced to a new product: the `GIFT_BASKET`, which contai
 ### Manual Challenge
 
 **Objective:**  
-In this challenge, we were tasked with embarking on up to three treasure-hunting expeditions, each with a potential reward based on the **treasure multiplier** and the number of **hunters** in the same spot. The challenge was to maximize our profit while balancing the cost of additional expeditions and the competition from other players.
+A mysterious message in a bottle washed ashore. It turns out to contain a treasure map belonging to the legendary Iguana Jones. Apparently, bounty is scattered all over the archipelago. The adventurer-archeologist also left a note with the treasure map containing some hints on how to find the biggest treasures and how to keep them to yourself.
+
+Your goal is to choose up to three expedition destinations and take home the most treasure. Each tile is said to hold at least 7.5k SeaShells, but rumors are going around that there might be multiple chests in one tile. 
   
 ## Round 4:
 
