@@ -25,8 +25,6 @@ In this round, we were introduced to the first two tradable products: `STARFRUIT
 - `STARFRUIT`: 20
 - `AMETHYSTS`: 20
 
-**Our Approach:**  
-In Round 1, our team focused on a market-making strategy that involved dynamically managing trades around Fair Value (FV) updates, inventory control, and price prediction models. The strategy was tailored to different products based on their unique characteristics: **AMETHYSTS** with a stable approach and **STARFRUIT** with a dynamic, trend-driven approach.
 
 #### Key Components
 
@@ -44,10 +42,8 @@ In Round 1, our team focused on a market-making strategy that involved dynamical
 
 #### AMETHYSTS: A Stable Approach
 
-AMETHYSTS had a well-established fair value of **10,000 units**, with minimal fluctuations (±2). Given this stability, we applied our market-making strategy with minimal adjustments to the fair value.
+AMETHYSTS have a well-established fair value of 10,000 units, with minimal fluctuations (±2). Given this stability, we directly applied our market-making strategy without needing to frequently adjust the fair value.
 
-- **Fair Value Stability**: The stable FV allowed for straightforward market making, with liquidity provision around the 10,000 mark.
-- **Minimal Fluctuations**: We capitalized on the minor variations by placing strategic bid/ask orders to maximize profits from small price changes.
 
 #### STARFRUIT: A Dynamic Approach
 
@@ -68,17 +64,13 @@ To reduce noise and avoid biases from small bid/ask spreads, we incorporated the
 
 #### Optimizing the Rolling Window
 
-To enhance accuracy, we evaluated various rolling window sizes using **heatmaps** to identify the optimal window size for precise price predictions.
+We evaluated various rolling window sizes using heatmaps to find the optimal window for accurate price predictions.
 
 #### Market Making vs. Market Taking
 
 - **Market Making**: Involves placing buy (bid) and sell (ask) orders at various price levels to provide liquidity without the intent of immediate execution.
   
 - **Market Taking**: Focuses on executing trades by matching orders with existing ones in the order book to fill positions quickly, regardless of price levels.
-
-#### Conclusion
-
-By tailoring our approach to each product, we balanced stability with dynamic trading strategies, enabling us to maximize profits while minimizing risks. Our market-making framework proved effective for AMETHYSTS' stable environment and adaptive enough to handle STARFRUIT's volatility.
 
 ### Manual Challenge
 
